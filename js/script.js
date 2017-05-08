@@ -1,6 +1,6 @@
 //back-end for my address book
 //first function of the propeties of object place
-function PLACE(name,country,county,town,timeOfYear,notes){
+function Place(name,country,county,town,timeOfYear,notes){
   this.loacationName=name;
   this.locationCountry=country;
   this.locationCounty=county;
@@ -17,5 +17,6 @@ $("form#destination").submit(function(){
   var inputedCountry=$("input#new-country").val();
   var inputedTime=$("input#new-date").val();
   var inputedNotes=$("input#new-name").val();
+  var newLocation=new Place(inputedName,inputedTown,inputedCounty,inputedCountry,inputedTime,inputedNotes);
 });
 });
