@@ -1,9 +1,14 @@
 //back-end for my address book
 //first function of the propeties of object place
-function PLACE(country,county,town,timeOfYear,notes){
-  this.country=country;
-  this.county=county;
-  this.city=town;
-  this.time=timeOfYear;
+function PLACE(name,country,county,town,timeOfYear,notes){
+  this.loacationName=name;
+  this.locationCountry=country;
+  this.locationCounty=county;
+  this.locationCity=town;
+  this.locationTime=timeOfYear;
   this.shortnote=notes;
 }
+//user interface logic
+$(document).ready(function(){
+
+});

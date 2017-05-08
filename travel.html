@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta content="viewport" name="device-width">
+  <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery.js"></script>
+  <script src="js/script.js"></script>
+  <title>address book for my places</title>
+</head>
+<body>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-1">
+          <h2>LOCATION ADDRESS</h2>
+          <form id="destination">
+            <label>location Name :</label>
+            <input type="text" class="form-control" id="new-name">
+            <label>location Town:</label>
+            <input type="text" class="form-control" id="new-town">
+            <label>location County :</label>
+            <input type="text" class="form-control" id="new-county">
+            <label>location Country :</label>
+            <input type="text" class="form-control" id="new-country">
+            <label>Time of the year :</label>
+            <input type="date" class="form-control" id="new-date">
+            <label>location notes :</label>
+            <textarea type="text" class="form-control" id="new-notes"></textarea>
+            <button type="submit" class="btn btn-primary" >ADD </button>
+          </form>
+          <!--shows places -->
+          <h2>PLACE :</h2>
+          <ul id="place">
+
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="col-md-6 col-md-offset-2" id="show-location">
+        <h2></h2>
+        <p>Location Town :<span class="town"></span></p>
+        <p>Location County :<span class="county"></span></p>
+        <p>Location Country :<span class="country"></span></p>
+        <p>Time of the year :<span class="year"></span></p>
+        <p>Location notes :<span class="note"></span></p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
